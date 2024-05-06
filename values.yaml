@@ -1,0 +1,9 @@
+serverFiles:
+  prometheus.yml:
+    scrape_configs:
+      - job_name: 'otel-collector'
+        static_configs:
+          - targets: ['otel-collector:8888']
+            #- job_name: 'apiserver'
+            #static_configs:
+            #- targets: ['0.0.0.0:8889']
